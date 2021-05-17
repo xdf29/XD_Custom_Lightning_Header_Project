@@ -1,4 +1,6 @@
 import { LightningElement, api } from 'lwc';
+import { loadStyle } from 'lightning/platformResourceLoader';
+import NoHeader from '@salesforce/resourceUrl/NoHeader';
 
 export default class CustomLightningHeader extends LightningElement {
 
@@ -35,5 +37,11 @@ export default class CustomLightningHeader extends LightningElement {
             --lwc-colorTextIconDefault: ${this.iconColor};
         `)
     };
+
+    connectedCallback(){
+        loadStyle(this, NoHeader)
+            .then(res => console.log('style loaded'))
+            .catch(error => console.log('Failed load style. ' + error))
+    }
 
 }
