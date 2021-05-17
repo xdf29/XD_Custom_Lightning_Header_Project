@@ -1,0 +1,24 @@
+<template>
+    <div style={headerStyle} class="slds-page-header custom-header">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name={iconCode} alternative-text="header-icon" title="header-icon"></lightning-icon>
+                        <span class="slds-assistive-text">header-icon</span>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate">{title}</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="slds-page-header__name-meta">{description}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

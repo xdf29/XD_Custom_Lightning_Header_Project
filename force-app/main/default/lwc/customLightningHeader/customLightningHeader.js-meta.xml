@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+            <property label="Header Title" name="title" type="String" placeholder="Title"/>
+            <property label="Header Description" name="description" type="String" placeholder="Description"/>
+            <property label="Icon" name="iconCode" type="String" placeholder="standard:custom_notification"/>
+            <property label="Icon Color" name="iconColor" type="String" placeholder="e.g. #f3f2f2" description="Only Applicable If Icon Is Under Utility Section. Support Hex Color Code and RGB Color Code"/>
+            <property label="Header Background Color" name="backgroundColor" type="String" placeholder="e.g. #f3f2f2" description="Support Hex Color Code and RGB Color Code"/>
+            <property label="Header Border" name="borderThick" type="String" placeholder="1px"/>
+            <property label="Header Border Color" name="borderColor" type="String" placeholder="e.g. #f3f2f2" description="Support Hex Color Code and RGB Color Code"/>
+            <property label="Header Text Color" name="textColor" type="String" placeholder="#f3f2f2" description="Support Hex Color Code and RGB Color Code"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
