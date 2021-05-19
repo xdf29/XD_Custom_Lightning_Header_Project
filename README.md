@@ -1,9 +1,10 @@
 ## Custom Lightning Header
+A custom Salesforce Lightning Header.
+<br/>
 <a href="https://githubsfdeploy.herokuapp.com?owner=xdf29&repo=XD_Custom_Lightning_Header_Project">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
-A custom Salesforce Lightning Header.
 
 ### Usage - Configurable Properties
 
