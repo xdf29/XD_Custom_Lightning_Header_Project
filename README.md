@@ -1,4 +1,8 @@
-###Properties
+## Custom Lightning Header
+A custom Salesforce Lightning Header.
+
+### Usage - Configurable Properties
+
 | Configurable Properties | Description | Example |
 | ------ | ------ | ------- |
 | Title | Title of the header | Lorem Ipsum   
