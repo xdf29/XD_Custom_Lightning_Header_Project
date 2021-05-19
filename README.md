@@ -1,18 +1,11 @@
-# Salesforce DX Project: Next Steps
-
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
-
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+###Properties
+| Configurable Properties | Description | Example |
+| ------ | ------ | ------- |
+| Title | Title of the header | Lorem Ipsum   
+| Description | Description | Phasellus molestie tellus ligula, at rutrum arcu rhoncus sed.
+| Icon | SLDS Icon Code. You may get more SLDS Icon HERE | utility:activity / standard:account / custom:custom1
+| Icon Color | Only Applicable If Icon Is Under Utility Section. Support Hex Color Code and RGB Color Code | rgb(243, 242, 242) / #f3f2f2
+| Header Background | Color of the header. Support Hex Color Code and RGB Color Code | rgb(243, 242, 242) / #f3f2f2
+| Header Border | Width of header's border | 1px
+| Header Border Color | Color of the header's border. Support Hex Color Code and RGB Color Code  | rgb(243, 242, 242) / #f3f2f2
+| Text Color | Color of the text in header. Support Hex Color Code and RGB Color Code  | rgb(243, 242, 242) / #f3f2f2
