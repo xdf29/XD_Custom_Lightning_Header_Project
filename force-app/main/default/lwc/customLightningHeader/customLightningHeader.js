@@ -14,34 +14,32 @@ export default class CustomLightningHeader extends LightningElement {
     description;
 
     @api
-    backgroundColor = 'rgb(243, 242, 242)';
+    backgroundColor;
 
     @api
-    borderThick = '1px';
+    borderThick;
 
     @api
-    borderColor = 'rgb(221, 219, 218)';
+    borderColor;
 
     @api 
     iconColor;
 
     @api 
-    textColor = 'black';
+    textColor;
 
     get headerStyle(){
         return (`
-            --lwc-pageHeaderColorBackground: ${this.backgroundColor};
-            --lwc-borderWidthThin: ${this.borderThick}; 
-            --lwc-pageHeaderColorBorder: ${this.borderColor};
-            color: ${this.textColor};
+            --lwc-pageHeaderColorBackground: ${this.backgroundColor ? this.backgroundColor : 'rgb(243, 242, 242)'};
+            --lwc-borderWidthThin: ${this.borderThick ? this.borderThick : '1px'}; 
+            --lwc-pageHeaderColorBorder: ${this.borderColor ? this.borderColor : 'rgb(221, 219, 218)'};
+            color: ${this.textColor ? this.textColor : 'black'};
             --lwc-colorTextIconDefault: ${this.iconColor};
         `)
     };
 
     connectedCallback(){
         loadStyle(this, NoHeader)
-            .then(res => console.log('style loaded'))
-            .catch(error => console.log('Failed load style. ' + error))
     }
 
 }
